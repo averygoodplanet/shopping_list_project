@@ -4,7 +4,26 @@ AUTHOR: Peter Himmelreich
 		averygoodplanet.com
 */
 
+body {
+	font-family: Georgia;
+}
+
 #center_wrapper {
 	width: 980px;
 	margin: auto;
+	border: 1px dashed black; 
 }
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 40px;
+}
+
+.purchased span{ /* Line-through style. */
+	background: url(images/line.jpg) repeat-x center;
+	color: #000;
+}
+
