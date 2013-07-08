@@ -73,6 +73,7 @@ span {
 }
 
 .purchased span{ /* Line-through style. */
-	background: url(images/line.jpg) repeat-x center;
+	text-decoration: line-through;
+	color: grey;
 }
 
