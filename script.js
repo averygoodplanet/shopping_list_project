@@ -13,13 +13,19 @@ $(document).ready( function () {
 		addItem();
 	});
 	
-	$("#item_naming").keypress(function (event) { //Calls addItem when ENTER pressed.
+	$("#item_naming").keypress(function (event) { //Calls addItem when ENTER pressed, then clears input box.
 		if(event.which == 13) {
 			addItem();
+			$(this).val("");
 		}
 	});
 	
 	$("#item_naming").on('focus', function () { //Clears input box when users clicks into it.
 		$(this).val("");
+	});
+	
+	$("ul").delegate("li", "click", function () { //Event handler so that clicking current and future <li> changes class to purchased.
+		console.log("Delegate function fired!");
+		$(this).removeClass("not_purchased").addClass("purchased");
 	});
 });
