@@ -6,12 +6,28 @@ AUTHOR: Peter Himmelreich
 
 body {
 	font-family: Georgia;
+	background-color: rgba(10, 90, 233, 0.498039);
+}
+
+#title {
+	height: 80px;
+	margin: 80px auto 80px auto;
+	width: 550px;
+	background-color: #E8F3FF;
+	border-radius: 4px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 60px;
+	border: 1px solid grey;
+	text-align: center;
 }
 
 #center_wrapper {
 	width: 980px;
 	margin: auto;
-	border: 1px dashed black; 
+	border: 1px solid grey; 
+	background-color: Gainsboro;
+	border-radius: 80px;
 }
 
 ul {
@@ -20,10 +36,20 @@ ul {
 
 li {
 	font-size: 40px;
+	margin:40px;
+}
+
+li span {
+	padding: 10px;
+	background-color: white;
+}
+
+span {
+	border: 1px solid grey;
+	border-radius: 8px;
 }
 
 .purchased span{ /* Line-through style. */
 	background: url(images/line.jpg) repeat-x center;
-	color: #000;
 }
 
