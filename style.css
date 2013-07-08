@@ -22,6 +22,25 @@ body {
 	text-align: center;
 }
 
+#control_box {
+	width: 520px;
+	border: 1px solid grey;
+	background-color: beige;
+	border-radius: 12px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#enter {
+	font-size: 35px;
+	padding: 10px 0px 20px 30px;
+}
+
+#item_naming {
+	font-size: 35px;
+	width: 350px;
+}
+
 #center_wrapper {
 	width: 980px;
 	margin: auto;
@@ -29,6 +48,10 @@ body {
 	background-color: Gainsboro;
 	border-radius: 80px;
 }
+
+#add_button {
+	font-size: 25px;
+}	
 
 ul {
 	list-style-type: none;
