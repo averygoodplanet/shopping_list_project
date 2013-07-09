@@ -14,6 +14,10 @@ $(document).ready( function () {
 		$("#item_naming").val("");
 	});
 	
+	$("#remove_button").on('click', function () {
+		$(".purchased").remove();
+	});
+	
 	$("#item_naming").keypress(function (event) { //Calls addItem when ENTER pressed, then clears input box.
 		if(event.which == 13) {
 			addItem();
@@ -25,7 +29,7 @@ $(document).ready( function () {
 		$(this).val("");
 	});
 	
-	$("ul").delegate("li", "click", function () { //Event handler so that clicking current and future <li> changes class to purchased.
+	$("ul#main_list").delegate("li", "click", function () { //Event handler so that clicking current and future <li> changes class to purchased.
 		console.log("Delegate function fired!");
 		$(this).removeClass("not_purchased").addClass("purchased");
 	});
