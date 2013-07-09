@@ -9,8 +9,9 @@ $(document).ready( function () {
 		}
 	}
 
-	$("#add_button").on('click', function () { //Calls addItem when "Add Item" button clicked.
+	$("#add_button").on('click', function () { //Calls addItem when "Add Item" button clicked, and then clears input box. 
 		addItem();
+		$("#item_naming").val("");
 	});
 	
 	$("#item_naming").keypress(function (event) { //Calls addItem when ENTER pressed, then clears input box.
